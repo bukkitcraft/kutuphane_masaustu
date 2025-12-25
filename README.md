@@ -228,17 +228,29 @@ Mevcut veritabanı versiyonu: **10**
 <a id="ekran-görüntüleri"></a>
 ## 🎨 Ekran Görüntüleri
 
-> 📸 Ekran görüntüleri yakında eklenecektir.
+### Giriş Ekranı
+![Giriş Ekranı](docs/screenshots/login.png)
 
-<!-- Ekran görüntüleri eklemek için:
-1. Screenshots klasörü oluşturun: `docs/screenshots/`
-2. Ekran görüntülerini ekleyin
-3. Aşağıdaki formatı kullanarak ekleyin:
-
+### Ana Ekran
 ![Ana Ekran](docs/screenshots/home.png)
+
+### Kitap Yönetimi
 ![Kitap Yönetimi](docs/screenshots/books.png)
+
+### Üye Yönetimi
 ![Üye Yönetimi](docs/screenshots/members.png)
--->
+
+### Personel Yönetimi
+![Personel Yönetimi](docs/screenshots/personnel.png)
+
+### Finans Yönetimi
+![Finans Yönetimi](docs/screenshots/finance.png)
+
+### Emanet İşlemleri
+![Emanet İşlemleri](docs/screenshots/escrow.png)
+
+### Raporlar
+![Raporlar](docs/screenshots/reports.png)
 
 <a id="geliştirici-notları"></a>
 ## 👨‍💻 Geliştirici Notları
