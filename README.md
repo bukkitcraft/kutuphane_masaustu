@@ -2,6 +2,8 @@
 
 Modern ve kapsamlı bir kütüphane yönetim sistemi. Flutter framework'ü kullanılarak geliştirilmiş masaüstü uygulaması.
 
+**Repository:** [https://github.com/bukkitcraft/kutuphane_masaustu](https://github.com/bukkitcraft/kutuphane_masaustu)
+
 ## 📋 İçindekiler
 
 - [Proje Hakkında](#proje-hakkında)
@@ -14,7 +16,10 @@ Modern ve kapsamlı bir kütüphane yönetim sistemi. Flutter framework'ü kulla
 - [Ekran Görüntüleri](#ekran-görüntüleri)
 - [Geliştirici Notları](#geliştirici-notları)
 - [Lisans](#lisans)
+- [Katkıda Bulunanlar](#katkıda-bulunanlar)
+- [İletişim](#iletişim)
 
+<a id="proje-hakkında"></a>
 ## 🎯 Proje Hakkında
 
 Bu proje, kütüphanelerin günlük işlemlerini dijitalleştirmek ve yönetmek için geliştirilmiş kapsamlı bir masaüstü uygulamasıdır. Sistem, kitap yönetimi, üye takibi, personel yönetimi, finansal işlemler ve raporlama gibi temel kütüphane işlemlerini tek bir platformda toplar.
@@ -26,6 +31,7 @@ Bu proje, kütüphanelerin günlük işlemlerini dijitalleştirmek ve yönetmek 
 - Raporlama ve analiz imkanı sunmak
 - Kullanıcı yetkilendirme sistemi ile güvenli erişim sağlamak
 
+<a id="özellikler"></a>
 ## ✨ Özellikler
 
 ### 📖 Kitap Yönetimi
@@ -80,6 +86,7 @@ Bu proje, kütüphanelerin günlük işlemlerini dijitalleştirmek ve yönetmek 
 - Menü bazlı yetkilendirme
 - Güvenli şifre yönetimi (MD5 hash)
 
+<a id="teknolojiler"></a>
 ## 🛠️ Teknolojiler
 
 ### Framework ve Dil
@@ -99,6 +106,7 @@ Bu proje, kütüphanelerin günlük işlemlerini dijitalleştirmek ve yönetmek 
 - **fl_chart** - Grafik ve görselleştirme
 - **flutter_localizations** - Yerelleştirme desteği
 
+<a id="kurulum"></a>
 ## 📦 Kurulum
 
 ### Gereksinimler
@@ -112,7 +120,7 @@ Bu proje, kütüphanelerin günlük işlemlerini dijitalleştirmek ve yönetmek 
 
 1. **Projeyi klonlayın veya indirin:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/bukkitcraft/kutuphane_masaustu.git
    cd kutuphane_masaustu
    ```
 
@@ -137,6 +145,7 @@ Bu proje, kütüphanelerin günlük işlemlerini dijitalleştirmek ve yönetmek 
    flutter build macos
    ```
 
+<a id="kullanım"></a>
 ## 🚀 Kullanım
 
 ### İlk Giriş
@@ -164,6 +173,7 @@ Veritabanı dosyası otomatik olarak şu konumlarda oluşturulur:
 - **Linux:** `~/.kutuphane_masaustu/kutuphane.db`
 - **macOS:** `~/Library/Application Support/KutuphaneMasaustu/kutuphane.db`
 
+<a id="proje-yapısı"></a>
 ## 📁 Proje Yapısı
 
 ```
@@ -190,6 +200,7 @@ lib/
 └── main.dart         # Ana uygulama dosyası
 ```
 
+<a id="veritabanı"></a>
 ## 🗄️ Veritabanı
 
 ### Tablolar
@@ -214,10 +225,22 @@ lib/
 
 Mevcut veritabanı versiyonu: **10**
 
+<a id="ekran-görüntüleri"></a>
 ## 🎨 Ekran Görüntüleri
 
-> 📸 Ekran görüntüleri eklenecek
+> 📸 Ekran görüntüleri yakında eklenecektir.
 
+<!-- Ekran görüntüleri eklemek için:
+1. Screenshots klasörü oluşturun: `docs/screenshots/`
+2. Ekran görüntülerini ekleyin
+3. Aşağıdaki formatı kullanarak ekleyin:
+
+![Ana Ekran](docs/screenshots/home.png)
+![Kitap Yönetimi](docs/screenshots/books.png)
+![Üye Yönetimi](docs/screenshots/members.png)
+-->
+
+<a id="geliştirici-notları"></a>
 ## 👨‍💻 Geliştirici Notları
 
 ### Veritabanı Migration
@@ -240,10 +263,12 @@ Uygulama şu anda desktop platformlar için optimize edilmiştir:
 - ❌ Web (SQLite desteği yok)
 - ❌ Mobile (test edilmemiş)
 
+<a id="lisans"></a>
 ## 📝 Lisans
 
-Bu proje eğitim amaçlı geliştirilmiştir.
+Bu proje eğitim amaçlı geliştirilmiştir. Tüm hakları saklıdır.
 
+<a id="katkıda-bulunanlar"></a>
 ## 👥 Katkıda Bulunanlar
 
 ### Proje Geliştiricileri
@@ -256,6 +281,7 @@ Bu proje eğitim amaçlı geliştirilmiştir.
 
 **Geliştirme Tarihi:** 2025
 
+<a id="iletişim"></a>
 ## 📞 İletişim
 
 Sorularınız veya önerileriniz için yukarıdaki geliştiricilerle iletişime geçebilirsiniz.
