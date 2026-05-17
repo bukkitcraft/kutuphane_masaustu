@@ -4,20 +4,20 @@ Modern ve kapsamlı bir kütüphane yönetim sistemi. Flutter framework'ü kulla
 
 **Repository:** [https://github.com/bukkitcraft/kutuphane_masaustu](https://github.com/bukkitcraft/kutuphane_masaustu)
 
-## 📋 İçindekiler
+## İçindekiler
 
-- [Proje Hakkında](#proje-hakkında)
-- [Ekran Görüntüleri](#ekran-görüntüleri)
-- [Özellikler](#özellikler)
-- [Teknolojiler](#teknolojiler)
-- [Kurulum](#kurulum)
-- [Debug Modu (Geliştirme)](#debug-modu-geliştirme)
-- [Build Alma (Yayınlama)](#build-alma-yayınlama)
-- [Kullanım](#kullanım)
-- [Proje Yapısı](#proje-yapısı)
-- [Veritabanı](#veritabanı)
-- [Geliştirici Notları](#geliştirici-notları)
-- [Katkıda Bulunanlar](#katkıda-bulunanlar)
+- [Proje Hakkında](#-proje-hakkında)
+- [Ekran Görüntüleri](#-ekran-görüntüleri)
+- [Özellikler](#-özellikler)
+- [Teknolojiler](#-teknolojiler)
+- [Kurulum](#-kurulum)
+- [Debug Modu (Geliştirme)](#-debug-modu-geliştirme)
+- [Build Alma (Yayınlama)](#-build-alma-yayınlama)
+- [Kullanım](#-kullanım)
+- [Proje Yapısı](#-proje-yapısı)
+- [Veritabanı](#-veritabanı)
+- [Geliştirici Notları](#-geliştirici-notları)
+- [Katkıda Bulunanlar](#-katkıda-bulunanlar)
 
 ---
 
@@ -34,7 +34,7 @@ Bu proje, kütüphanelerin günlük işlemlerini dijitalleştirmek ve yönetmek 
 
 ---
 
-## 🖼️ Ekran Görüntüleri
+## 📸 Ekran Görüntüleri
 
 ### Giriş Ekranı
 ![Giriş Ekranı](images/login-panel.png)
@@ -143,14 +143,14 @@ Bu proje, kütüphanelerin günlük işlemlerini dijitalleştirmek ve yönetmek 
 - Menü bazlı yetkilendirme
 - Güvenli şifre yönetimi (MD5 hash)
 
-### 🗄️ Veritabanı Yönetimi
+### 💾 Veritabanı Yönetimi
 - Veritabanı yedeği alma (Downloads klasörüne)
 - Yedekten geri yükleme
 - Tüm platform desteği (Windows, Linux, macOS)
 
 ---
 
-## 🛠️ Teknolojiler
+## 🔧 Teknolojiler
 
 ### Framework ve Dil
 - **Flutter** - Cross-platform UI framework
@@ -443,7 +443,7 @@ lib/
 
 ---
 
-## 🗄️ Veritabanı
+## 💾 Veritabanı
 
 ### Tablolar
 
@@ -469,7 +469,7 @@ Mevcut veritabanı versiyonu: **11**
 
 ---
 
-## 👨‍💻 Geliştirici Notları
+## 💻 Geliştirici Notları
 
 ### Veritabanı Migration
 
