@@ -1,0 +1,48 @@
+name: Build Linux
+
+on:
+  workflow_dispatch:  # Manuel tetikleme için
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.24.0'
+        channel: 'stable'
+        
+    - name: Install dependencies
+      run: flutter pub get
+      
+    - name: Install Linux dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev
+      
+    - name: Build Linux app
+      run: flutter build linux --release
+      
+    - name: Create tarball
+      run: |
+        cd build/linux/x64/release/bundle
+        tar -czf ../../../../kutuphane_masaustu-linux.tar.gz *
+      
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: linux-build
+        path: |
+          build/linux/x64/release/bundle/**
+          build/linux/x64/release/kutuphane_masaustu-linux.tar.gz
+        retention-days: 30
+

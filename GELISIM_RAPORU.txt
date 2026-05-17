@@ -1,0 +1,67 @@
+Gelisim Raporu
+
+Bu rapor, proje kod tabaninin genel durumunu ve iyilestirme onceliklerini ozetler.
+
+1) Proje Ozeti
+
+- Uygulama: Flutter masaustu kutuphane yonetim sistemi
+- Moduller: Uye, Personel, Kitap, Emanet, Finans, Raporlar, Hatirlatmalar, Yetkiler
+- Veri katmani: SQLite (sqflite, sqflite_common_ffi)
+
+2) Guclu Yonler
+
+- Modul kapsami genis ve gercek kullanim senaryolari mevcut.
+- Masaustu odakli UI, tablo ve filtre akislarinda kullanisli.
+- Servis ve model katmanlari temel olarak ayrilmis.
+- Raporlama ve emanet tarafinda fonksiyonel ilerleme var.
+
+3) Gelisim Gerektiren Alanlar
+
+- Bazi ekran dosyalari cok buyuk (bakim zor):
+  - lib/screens/companies_screen.dart
+  - lib/screens/finance_screen.dart
+  - lib/screens/members_screen.dart
+  - lib/screens/escrow_screen.dart
+  - lib/screens/reports_screen.dart
+- Emanet islemlerinde birden fazla tablo guncellemesi transaction disi.
+- Sifreleme tarafinda MD5 kullaniminin iyilestirilmesi gerekiyor.
+- CI tarafinda analyze/test zorunlu kalite adimi eksik.
+
+4) Teknik Borc Onceliklendirme
+
+Kritik
+- Sifre guvenligi (MD5 -> guclu hash algoritmasi)
+- Emanet/kitap/uye sayac guncellemelerinde transaction kullanimi
+
+Yuksek
+- Buyuk ekran dosyalarinin parcali mimariye bolunmesi
+- CI'a flutter analyze ve flutter test eklenmesi
+
+Orta
+- Hata yakalama ve kullanici geri bildirim standardizasyonu
+- Ortak CRUD kaliplarinin tekrarini azaltma
+
+5) 30 Gunluk Onerilen Plan
+
+Hafta 1
+- Guvenlik iyilestirmeleri (sifre hash, varsayilan admin akisi)
+- CI kalite kapisi (analyze + test)
+
+Hafta 2
+- Emanet akisinin transaction ile guclendirilmesi
+- Veri tabani migration netlestirmesi
+
+Hafta 3
+- finance ve escrow ekranlarini kucuk bilesenlere bolme
+- Ortak tablo/filtre widgetlarini ayristirma
+
+Hafta 4
+- Kritik akislar icin test kapsami artirma
+- Raporlar ekraninda performans optimizasyonu
+
+6) Hizli Kazanimlar (1-2 Gun)
+
+- Raporlar ve dialog baslik/metin standardi
+- Emanet/finans tarafinda hata mesajlarinin birlestirilmesi
+- Mevcut widget testinin guncel UI akisina uyarlanmasi
+

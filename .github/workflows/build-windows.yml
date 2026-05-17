@@ -1,0 +1,45 @@
+name: Build Windows
+
+on:
+  workflow_dispatch:  # Manuel tetikleme için
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.24.0'
+        channel: 'stable'
+        
+    - name: Install dependencies
+      run: flutter pub get
+      
+    - name: Build Windows app
+      run: flutter build windows --release
+      
+    - name: Create ZIP archive
+      shell: powershell
+      run: |
+        $appPath = "build\windows\x64\runner\Release"
+        $zipPath = "kutuphane_masaustu-windows.zip"
+        Compress-Archive -Path "$appPath\*" -DestinationPath $zipPath -Force
+      
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: windows-build
+        path: |
+          build/windows/x64/runner/Release/**
+          kutuphane_masaustu-windows.zip
+        retention-days: 30
+
